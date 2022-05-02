@@ -7,13 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- TITLE TAG -->
         <title>Marc | Front End Web Developer</title>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+        <!-- CSS LINKS -->
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
 
     <body>
         <!-- HEADER START -->
         <header>
             <!-- Clickable title that takes you to the index page-->
-            <a href="index.html">
+            <a href="index.html" id="logo">
                 <h1>Marc</h1>
                 <h2>Front End Web Developer</h2>
             </a>
@@ -23,16 +31,16 @@
                 <ul>
                     <li><a href="index.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="selected">Contact</a></li>
                 </ul>
             </nav>
             <!-- Naviagtion Finish-->
         </header>
         <!-- HEADER FINISH -->
 
-        <div>
+        <div id="wrapper">
             <!-- Start of first column -->
-            <div>
+            <div id="primary">
                 <!-- title -->
                 <h3>General Information</h3>
                 <!-- general information -->
@@ -41,14 +49,14 @@
             <!-- End of first column -->
 
             <!-- Start of second column -->
-            <div>
+            <div id="secondary">
                 <!-- title -->
                 <h3>Contact Information</h3>
                 <!-- contact information -->
-                <ul>
-                    <li><a href="tel:5021234567">(502) 123-4567</a></li>
-                    <li><a href="mailto:test@test.test">username@email.com</a></li>
-                    <li><a href="https://twitter.com" target="_blank">@username</a></li>
+                <ul class="contact-info">
+                    <li class="phone"><a href="tel:5021234567">(502) 123-4567</a></li>
+                    <li class="email"><a href="mailto:test@test.test">username@email.com</a></li>
+                    <li class="twitter"><a href="https://twitter.com" target="_blank">@username</a></li>
                 </ul>
             </div>
             <!-- End of second column -->
@@ -57,9 +65,9 @@
         <!-- FOOTER START -->
         <footer>
             <!-- Twitter link thats clickable and opens in a new page-->
-            <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png" class="social-icon"></a>
             <!-- Facebook link thats clickable and opens in a new page-->
-            <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png"></a>
+            <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png" class="social-icon"></a>
             <!-- Copyright Info -->
             <p>&copy; 2022 Marc</p>
         </footer>
